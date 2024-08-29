@@ -82,15 +82,16 @@ Ao usar models, o Django automaticamente cria um banco de dados relacional basea
     ```
 
    O comando `migrate` aplica todas as migrações pendentes, criando as tabelas e aplicando as alterações necessárias ao banco de dados. Isso garante que a estrutura do banco de dados corresponda aos modelos definidos no seu projeto.
+   
+   O Django, por padrão, utiliza o SQLite como seu banco de dados. Quando você cria e aplica migrações, um arquivo `db.sqlite3` é gerado na raiz do seu projeto. Esse arquivo contém todas as tabelas e dados gerados a partir dos seus models, funcionando como o banco de dados da sua aplicação.
 
-7. **Execute o servidor de desenvolvimento**:
+8. **Execute o servidor de desenvolvimento**:
     ```bash
     python manage.py runserver
     ```
+9. Utilize o DBrowser para abrir o banco db.sqlite3, criado no diretório raiz do projeto, e consulte a tabela criadas com o nome **myapp_profile**. 
 
 ### Banco de Dados SQLite
-
-- O Django, por padrão, utiliza o SQLite como seu banco de dados. Quando você cria e aplica migrações, um arquivo `db.sqlite3` é gerado na raiz do seu projeto. Esse arquivo contém todas as tabelas e dados gerados a partir dos seus models, funcionando como o banco de dados da sua aplicação.
 
 - A configuração do banco de dados em `settings.py` é feita da seguinte forma:
 
@@ -128,4 +129,11 @@ Ao usar models, o Django automaticamente cria um banco de dados relacional basea
 └── README.md
 ```
 
-**Nota**: A pasta `__pycache__` é ignorada nesta listagem, pois contém arquivos de cache que não são necessários para o controle de versão.
+### Sobre Nosso Treinamento Prático-Profissional com projeto real para iniciantes e avançados em web DevOps Full-stack com Python, Django, Bootstrap e Linux.
+
+[Django Developers Brasil - Aprenda programando enquanto programa aprendendo!](https://django.dev.br/)
+
+Nosso treinamento oferece uma experiência prática de aprendizado de programação, adequada tanto para iniciantes quanto para desenvolvedores avançados. Você participará de um projeto real de desenvolvimento de software em um ambiente corporativo autêntico, onde pessoas com diferentes níveis de conhecimento irão colaborar, aprendendo umas com as outras.
+
+**Junte-se a nós!** E desenvolva as habilidades necessárias para o mercado de trabalho, aprimorando tanto seus conhecimentos técnicos quanto suas soft skills em um ambiente colaborativo e realista.
+
