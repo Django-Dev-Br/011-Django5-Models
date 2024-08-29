@@ -48,8 +48,8 @@ Ao usar models, o Django automaticamente cria um banco de dados relacional basea
 
 1. **Clone o repositório**:
     ```bash
-    git clone https://github.com/Django-Dev-Br/011-Django-4-Profile-Model.git
-    cd 011-Django-4-Profile-Model
+    git clone https://github.com/Django-Dev-Br/011-Django-4-Models.git
+    cd 011-Django-4-Models
     ```
 
 2. **Crie um ambiente virtual**:
