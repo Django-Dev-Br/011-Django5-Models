@@ -28,7 +28,7 @@ Ao usar models, o Django automaticamente cria um banco de dados relacional basea
 - **Python 3.12 com PIP e venv**
 - **o Django 5 requer Python 3.10 ou superior.**
 
-- **No [repositório 001](https://github.com/Django-Dev-Br/001-django4-basic-project) há explicações sobre PIP e venv**
+- **No [repositório 001](https://github.com/Django-Dev-Br/001-django5-basic-project) há explicações sobre PIP e venv**
   
   [Baixar Python 3.12](https://www.python.org/downloads/release/python-3122/)
 
@@ -40,7 +40,7 @@ Ao usar models, o Django automaticamente cria um banco de dados relacional basea
 
 1. **Clone o repositório**:
     ```bash
-    git clone https://github.com/Django-Dev-Br/007-Django5-Custom-404-Error-Page.git
+    git clone https://github.com/Django-Dev-Br/011-Django5-Models.git
     ```
 
 2. **Crie um ambiente virtual**:
@@ -67,11 +67,12 @@ Ao usar models, o Django automaticamente cria um banco de dados relacional basea
     ```
     
 4. **Acesse a pasta do repositório**:
+   
     ```bash
-    cd 007-Django5-Custom-404-Error-Page
+    cd 011-Django5-Models
     ```
     
-5. **Instale o Django**:
+6. **Instale o Django**:
 
    Fazer a instalação após a ativação da virtual env fará com que a instalação seja feita nessa pasta ao invés do computador. Isso significa que o pacote Django não estará disponivel para todos os usuários do computador, mas apenas para o contexto no qual essa venv esteja ativada. Veremos sua ativação logo abaixo.
 
@@ -93,14 +94,14 @@ Ao usar models, o Django automaticamente cria um banco de dados relacional basea
     ```
     O arquivo requirements.txt é um arquivo de texto que contém uma lista de pacotes a ser instalado em uma venv. É uma boa prática de programação do ecossistema Python.
 
-6. **Crie migrações para o modelo**:
+7. **Crie migrações para o modelo**:
     ```bash
     python manage.py makemigrations
     ```
 
    Este comando irá analisar as mudanças no modelo do seu aplicativo e criar um arquivo de migração (por exemplo, `0001_initial.py`) na pasta `migrations`. Esse arquivo de migração define como as tabelas do banco de dados devem ser criadas ou alteradas.
 
-7. **Aplique as migrações ao banco de dados**:
+8. **Aplique as migrações ao banco de dados**:
     ```bash
     python manage.py migrate
     ```
@@ -109,11 +110,11 @@ Ao usar models, o Django automaticamente cria um banco de dados relacional basea
    
    O Django, por padrão, utiliza o SQLite como seu banco de dados. Quando você cria e aplica migrações, um arquivo `db.sqlite3` é gerado na raiz do seu projeto. Esse arquivo contém todas as tabelas e dados gerados a partir dos seus models, funcionando como o banco de dados da sua aplicação.
 
-8. **Execute o servidor de desenvolvimento**:
+9. **Execute o servidor de desenvolvimento**:
     ```bash
     python manage.py runserver
     ```
-9. Utilize o DBrowser para abrir o banco db.sqlite3, criado no diretório raiz do projeto, e consulte a tabela criadas com o nome **myapp_profile**. 
+10. Utilize o DBrowser para abrir o banco db.sqlite3, criado no diretório raiz do projeto, e consulte a tabela criadas com o nome **myapp_profile**. 
 
 ### Banco de Dados SQLite
 
