@@ -25,58 +25,82 @@ Ao usar models, o Django automaticamente cria um banco de dados relacional basea
 
 ### Requisitos
 
-- **Python 3.12**  
+- **Python 3.12 com PIP e venv**
+- **o Django 5 requer Python 3.10 ou superior.**
+
+- **No [repositório 001](https://github.com/Django-Dev-Br/001-django4-basic-project) há explicações sobre PIP e venv**
+  
   [Baixar Python 3.12](https://www.python.org/downloads/release/python-3122/)
 
-  Confira o vídeo para saber como trabalhar com múltiplas versões do Python e com venv (ambiente virtual): [Trabalhando com Múltiplas Versões do Python + venv](https://youtu.be/eetDeQrv0Rs?si=rAIDmLCgdeh7ouXa)
+   Confira o vídeo para saber como trabalhar com múltiplas versões do Python e com venv (ambiente virtual):
+  [![Watch the video](https://img.youtube.com/vi/eetDeQrv0Rs/0.jpg)](https://youtu.be/eetDeQrv0Rs)
 
-- **Virtualenv**
 
-  Para instalar o pacote `virtualenv` no Python, utilize os seguintes comandos:
-
-  - **Linux**:
-    ```bash
-    python3 -m pip install virtualenv
-    ```
-
-  - **Windows**:
-    ```bash
-    python -m pip install virtualenv
-    ```
-
-### Passos para Executar
+### 7 passos simples para executar
 
 1. **Clone o repositório**:
     ```bash
-    git clone https://github.com/Django-Dev-Br/011-Django-4-Models.git
-    cd 011-Django-4-Models
+    git clone https://github.com/Django-Dev-Br/007-Django5-Custom-404-Error-Page.git
     ```
 
 2. **Crie um ambiente virtual**:
+   
+    **Windows**
     ```bash
-    python3 -m venv myvenv  # Linux
-    python -m venv myvenv  # Windows
+     python -m venv myvenv  
+    ```
+   **Linux**
+    ```bash
+     python3 -m venv myvenv  
     ```
 
 3. **Ative o ambiente virtual criado**:
+   
+    **Windows**
     ```bash
-    source myvenv/bin/activate  # Linux
-    myvenv\Scripts\ctivate  # Windows
+    myvenv\Scripts\activate  
     ```
 
-4. **Instale o Django**:
+   **Linux**
     ```bash
-    pip install django==4.2.15
+    source myvenv/bin/activate  
+    ```
+    
+4. **Acesse a pasta do repositório**:
+    ```bash
+    cd 007-Django5-Custom-404-Error-Page
+    ```
+    
+5. **Instale o Django**:
+
+   Fazer a instalação após a ativação da virtual env fará com que a instalação seja feita nessa pasta ao invés do computador. Isso significa que o pacote Django não estará disponivel para todos os usuários do computador, mas apenas para o contexto no qual essa venv esteja ativada. Veremos sua ativação logo abaixo.
+
+    **Instalação manualmente via gerenciador de dependências PIP**
+    ```bash
+    pip install django
+    ```
+    - use, preferencialmente, a versão 5.1. Para tanto, execute o comando:
+
+     ```bash
+    pip install  "django>=5.1,<=5.2"
     ```
 
-5. **Crie migrações para o modelo**:
+    ----- **OU** -----
+
+    **Instalação via arquivo requirements**
+    ```bash
+    pip install -r requirements.txt
+    ```
+    O arquivo requirements.txt é um arquivo de texto que contém uma lista de pacotes a ser instalado em uma venv. É uma boa prática de programação do ecossistema Python.
+
+6. **Crie migrações para o modelo**:
     ```bash
     python manage.py makemigrations
     ```
 
    Este comando irá analisar as mudanças no modelo do seu aplicativo e criar um arquivo de migração (por exemplo, `0001_initial.py`) na pasta `migrations`. Esse arquivo de migração define como as tabelas do banco de dados devem ser criadas ou alteradas.
 
-6. **Aplique as migrações ao banco de dados**:
+7. **Aplique as migrações ao banco de dados**:
     ```bash
     python manage.py migrate
     ```
