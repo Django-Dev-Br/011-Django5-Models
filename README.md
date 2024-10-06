@@ -114,7 +114,18 @@ Ao usar models, o Django automaticamente cria um banco de dados relacional basea
     ```bash
     python manage.py runserver
     ```
-10. Utilize o DBrowser para abrir o banco db.sqlite3, criado no diretório raiz do projeto, e consulte a tabela criadas com o nome **myapp_profile**. 
+10. Após criar e aplicar as migrações para o banco de dados, você pode querer visualizar a estrutura e os dados do banco. Aqui estão duas opções simples para visualizar o banco de dados SQLite utilizado pelo Django:
+
+**DB Browser for SQLite**
+[https://sqlitebrowser.org/](https://sqlitebrowser.org/)
+
+Você pode usar o DB Browser for SQLite, que é uma ferramenta gráfica gratuita e fácil de usar. Com ele, você poderá abrir o arquivo db.sqlite3 localizado no diretório raiz do projeto e explorar as tabelas, incluindo o conteúdo e a estrutura delas.
+
+**Extensão DB Viewer para VS Code**
+[https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer](https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer)
+
+Outra opção é utilizar a extensão DB Viewer para VS Code. Se você já está utilizando o VS Code para desenvolver, essa extensão é uma ótima maneira de acessar e visualizar o conteúdo do banco de dados sem sair do ambiente de desenvolvimento. Basta instalá-la e abrir o arquivo db.sqlite3 diretamente no editor.
+
 
 ### Banco de Dados SQLite
 
