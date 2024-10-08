@@ -211,6 +211,7 @@ Explicações dos Tipos de Campo Utilizados:
 │   └── wsgi.py
 ├── db.sqlite3           # Banco de dados SQLite
 └── README.md
+└── requirements.txt    # Lista de pacotes Python necessários para o projeto
 ```
 
 ### Sobre Nosso Treinamento Prático-Profissional com projeto real para iniciantes e avançados em web DevOps Full-stack com Python, Django, Bootstrap e Linux.
