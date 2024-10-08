@@ -1,5 +1,5 @@
 
-# 011 Django 4 Profile Model
+# 011 Django 5 - Models
 
 ## O que são Models no Django?
 
@@ -193,7 +193,7 @@ Explicações dos Tipos de Campo Utilizados:
 ### Estrutura de Diretórios do Projeto
 
 ```
-011-Django-4-Profile-Model/
+011-Django5-Profile-Model/
 ├── manage.py
 ├── myapp/
 │   ├── __init__.py
